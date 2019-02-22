@@ -1,0 +1,406 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9ECA5E93-4941-4C65-8F52-F8B90E256491}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyProject</RootNamespace>
+    <AssemblyName>MyProject</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account.aspx" />
+    <Content Include="AdminDelete.aspx" />
+    <Content Include="AdminEntry.aspx" />
+    <Content Include="car.aspx" />
+    <Content Include="cCart.aspx" />
+    <Content Include="contact.aspx" />
+    <Content Include="default.aspx" />
+    <Content Include="error.aspx" />
+    <Content Include="img\5.jpg" />
+    <Content Include="img\acer aspire 5315.jpg" />
+    <Content Include="img\acer travelmate 4730.jpg" />
+    <Content Include="img\ad1\1.jpg" />
+    <Content Include="img\ad1\2.jpg" />
+    <Content Include="img\ad1\3.jpg" />
+    <Content Include="img\ad1\4.jpg" />
+    <Content Include="img\ad1\5.jpg" />
+    <Content Include="img\ad1\6.jpg" />
+    <Content Include="img\ad1\7.jpg" />
+    <Content Include="img\ad1\8.jpg" />
+    <Content Include="img\audi-r8.jpg" />
+    <Content Include="img\bugatti-veyron-main-post-1.jpg" />
+    <Content Include="img\buy_now.png" />
+    <Content Include="img\coampac presario a901tu.jpg" />
+    <Content Include="img\dell axise7943.jpg" />
+    <Content Include="img\detail.jpg" />
+    <Content Include="img\hcl n30.jpg" />
+    <Content Include="img\Honda-CRV-Diesel-Car-India-1.j.jpg" />
+    <Content Include="img\Honda-CRV.jpg" />
+    <Content Include="img\lamborghin.jpg" />
+    <Content Include="img\lamborghini-murcielago-r-gt.jpg" />
+    <Content Include="img\Lamborghini_Car_5.jpg" />
+    <Content Include="img\laptop.jpg" />
+    <Content Include="img\lg kf600.jpg" />
+    <Content Include="img\lg kg13.jpg" />
+    <Content Include="img\lg prada.jpg" />
+    <Content Include="img\lg-kf510.jpg" />
+    <Content Include="img\Lotus-Flower-DSCN1628.jpg" />
+    <Content Include="img\nokia 2730 classic.jpg" />
+    <Content Include="img\nokia 5000.jpg" />
+    <Content Include="img\nokia 5530.jpg" />
+    <Content Include="img\nokia 6300.jpg" />
+    <Content Include="img\oia\download %281%29.png" />
+    <Content Include="img\oia\download %282%29.png" />
+    <Content Include="img\oia\download.jpg" />
+    <Content Include="img\oia\download.png" />
+    <Content Include="img\oia\images %281%29.png" />
+    <Content Include="img\oia\images.jpg" />
+    <Content Include="img\oia\images.png" />
+    <Content Include="img\oia\right-advisor.png" />
+    <Content Include="img\product1\FD\Flexi_AutoSweep_fd.jpg" />
+    <Content Include="img\product1\FD\POST_FD.jpg" />
+    <Content Include="img\product1\FD\Regular_FD.jpg" />
+    <Content Include="img\product1\FD\SBI_UNFIXED_FD.JPG" />
+    <Content Include="img\product1\FD\Tax_saving_fd.jpg" />
+    <Content Include="img\product\3868.jpg" />
+    <Content Include="img\product\A STAR.jpg" />
+    <Content Include="img\product\accord.jpg" />
+    <Content Include="img\product\alto.png" />
+    <Content Include="img\product\armani.jpg" />
+    <Content Include="img\product\art_Dress7.jpg" />
+    <Content Include="img\product\city.jpg" />
+    <Content Include="img\product\civic.jpg" />
+    <Content Include="img\product\crz.jpg" />
+    <Content Include="img\product\Curvo.jpg" />
+    <Content Include="img\product\Flexi_AutoSweep_fd.jpg" />
+    <Content Include="img\product\g600.jpg" />
+    <Content Include="img\product\inno8.jpg" />
+    <Content Include="img\product\jet.jpg" />
+    <Content Include="img\product\kizashi.jpg" />
+    <Content Include="img\product\NPS.jpg" />
+    <Content Include="img\product\NPS_LONG.jpg" />
+    <Content Include="img\product\NPS_PROD.jpg" />
+    <Content Include="img\product\NPS_TRESS.jpg" />
+    <Content Include="img\product\NPS_WATER.jpg" />
+    <Content Include="img\product\Omni.jpg" />
+    <Content Include="img\product\pilot.jpg" />
+    <Content Include="img\product\pixon.jpg" />
+    <Content Include="img\product\POST_FD.jpg" />
+    <Content Include="img\product\PPF_CHILD_EDU.JPG" />
+    <Content Include="img\product\PPF_CHILD_MIR.jpg" />
+    <Content Include="img\product\PPF_PF.jpg" />
+    <Content Include="img\product\PPF_RETIREMENT.jpg" />
+    <Content Include="img\product\PPF_WORLD_TOUR.jpg" />
+    <Content Include="img\product\puyo.jpg" />
+    <Content Include="img\product\Regular_FD.jpg" />
+    <Content Include="img\product\Ritz.png" />
+    <Content Include="img\product\s3310.jpg" />
+    <Content Include="img\product\s5233.jpg" />
+    <Content Include="img\product\s5250.jpg" />
+    <Content Include="img\product\SBI_UNFIXED_FD.JPG" />
+    <Content Include="img\product\sch b550.jpg" />
+    <Content Include="img\product\sgh i780.jpg" />
+    <Content Include="img\product\SWIFT.jpg" />
+    <Content Include="img\product\Tax_saving_fd.jpg" />
+    <Content Include="img\product\u960.jpg" />
+    <Content Include="img\product\wed.jpg" />
+    <Content Include="img\product\Zen.jpg" />
+    <Content Include="img\product\zenestilo.jpg" />
+    <Content Include="img\samsung d880 duos.jpg" />
+    <Content Include="img\samsung pda.jpg" />
+    <Content Include="img\samsung pixon.jpg" />
+    <Content Include="img\sony c905.jpg" />
+    <Content Include="img\sony k790.jpg" />
+    <Content Include="img\str\ADMINBUTTON\ADD CATEGORIES.png" />
+    <Content Include="img\str\ADMINBUTTON\ADD PRODUCTS.png" />
+    <Content Include="img\str\ADMINBUTTON\EDIT CATEGORIES.png" />
+    <Content Include="img\str\ADMINBUTTON\EDIT PRODUCTS.png" />
+    <Content Include="img\str\ADMINBUTTON\MANAGE.png" />
+    <Content Include="img\str\buttons\accounts.png" />
+    <Content Include="img\str\buttons\AddToCart.gif" />
+    <Content Include="img\str\buttons\btn_send.png" />
+    <Content Include="img\str\buttons\car.bmp" />
+    <Content Include="img\str\buttons\car.png" />
+    <Content Include="img\str\buttons\cars.png" />
+    <Content Include="img\str\buttons\CART.png" />
+    <Content Include="img\str\buttons\checkout.jpg" />
+    <Content Include="img\str\buttons\computer-music-561760.jpeg" />
+    <Content Include="img\str\buttons\contact.png" />
+    <Content Include="img\str\buttons\EditGiftRegistry.gif" />
+    <Content Include="img\str\buttons\FD.bmp" />
+    <Content Include="img\str\buttons\home.png" />
+    <Content Include="img\str\buttons\IMG0276A.jpg" />
+    <Content Include="img\str\buttons\lap.bmp" />
+    <Content Include="img\str\buttons\laptop.png" />
+    <Content Include="img\str\buttons\loadingAnimation.gif" />
+    <Content Include="img\str\buttons\Login.gif" />
+    <Content Include="img\str\buttons\logout.gif" />
+    <Content Include="img\str\buttons\midl.jpg" />
+    <Content Include="img\str\buttons\mob.bmp" />
+    <Content Include="img\str\buttons\mobile.png" />
+    <Content Include="img\str\buttons\n1.jpg" />
+    <Content Include="img\str\buttons\NPS.bmp" />
+    <Content Include="img\str\buttons\PPF.bmp" />
+    <Content Include="img\str\buttons\Products.png" />
+    <Content Include="img\str\buttons\Register.gif" />
+    <Content Include="img\str\buttons\saddtocart2.gif" />
+    <Content Include="img\str\buttons\sign in.bmp" />
+    <Content Include="img\str\buttons\submit_blue.png" />
+    <Content Include="img\str\buttons\Untitled.png" />
+    <Content Include="img\str\buttons\visa.gif" />
+    <Content Include="laptop.aspx" />
+    <Content Include="login1.aspx" />
+    <Content Include="ManageUser.aspx" />
+    <Content Include="mobile.aspx" />
+    <Content Include="MyProject.Publish.xml" />
+    <Content Include="MyProject.SourceManifest.xml" />
+    <Content Include="productDetail.aspx" />
+    <Content Include="reg\Password recover.aspx" />
+    <Content Include="reg\Register.aspx" />
+    <Content Include="reg\StyleSheet1.css" />
+    <Content Include="reg\WebForm1.aspx" />
+    <Content Include="shopping.sql" />
+    <Content Include="Web.config" />
+    <Content Include="XMLFile1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.aspx.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account.aspx.designer.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDelete.aspx.cs">
+      <DependentUpon>AdminDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminDelete.aspx.designer.cs">
+      <DependentUpon>AdminDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEntry.aspx.cs">
+      <DependentUpon>AdminEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminEntry.aspx.designer.cs">
+      <DependentUpon>AdminEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="car.aspx.cs">
+      <DependentUpon>car.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="car.aspx.designer.cs">
+      <DependentUpon>car.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cCart.aspx.cs">
+      <DependentUpon>cCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cCart.aspx.designer.cs">
+      <DependentUpon>cCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="error.aspx.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="error.aspx.designer.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="laptop.aspx.cs">
+      <DependentUpon>laptop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="laptop.aspx.designer.cs">
+      <DependentUpon>laptop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login1.aspx.cs">
+      <DependentUpon>login1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login1.aspx.designer.cs">
+      <DependentUpon>login1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageUser.aspx.cs">
+      <DependentUpon>ManageUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageUser.aspx.designer.cs">
+      <DependentUpon>ManageUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mobile.aspx.cs">
+      <DependentUpon>mobile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile.aspx.designer.cs">
+      <DependentUpon>mobile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="productDetail.aspx.cs">
+      <DependentUpon>productDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="productDetail.aspx.designer.cs">
+      <DependentUpon>productDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reg\Password recover.aspx.cs">
+      <DependentUpon>Password recover.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reg\Password recover.aspx.designer.cs">
+      <DependentUpon>Password recover.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reg\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reg\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reg\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reg\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dockerfile" />
+    <None Include=".dockerignore">
+      <DependentUpon>Dockerfile</DependentUpon>
+    </None>
+    <Content Include="img\Web.config" />
+    <None Include="packages.config" />
+    <Content Include="reg\Web.config" />
+    <Content Include="Site1.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="img\str\category\" />
+    <Folder Include="img\str\Products\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50121</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50121/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
